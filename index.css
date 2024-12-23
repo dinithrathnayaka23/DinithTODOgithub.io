@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    margin-bottom: 10px;
+  }
+  
+  .green {
+    padding: 10px 15px;
+    margin: 5px;
+    border:1px solid black;
+    border-radius: 4px;
+    background-color: #47fa52;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .green:hover {
+    background-color: black;
+    color: #47fa52;
+  }
+
+  .red{
+    padding: 10px 15px;
+    margin: 5px;
+    border:1px solid black;
+    border-radius: 4px;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .red:hover {
+    background-color: black;
+    color: red;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li.selected {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+  }
+  
