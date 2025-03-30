@@ -1,82 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('https://img.freepik.com/premium-photo/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg');
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .todo-container {
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  input {
-    width: 90%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .buttons {
-    margin-bottom: 10px;
-  }
-  
-  .green {
-    padding: 10px 15px;
-    margin: 5px;
-    border:1px solid black;
-    border-radius: 4px;
-    background-color: #47fa52;
-    color: black;
-    cursor: pointer;
-  }
-  
-  .green:hover {
-    background-color: black;
-    color: #47fa52;
-  }
+  font-family: Arial, sans-serif;
+  background-image: url('https://miro.medium.com/v2/resize:fit:8000/1*B4cpY9n3aiWgjiM_dY6Jjw.jpeg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .red{
-    padding: 10px 15px;
-    margin: 5px;
-    border:1px solid black;
-    border-radius: 4px;
-    background-color: red;
-    color: black;
-    cursor: pointer;
-  }
-  
-  .red:hover {
-    background-color: black;
-    color: red;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    padding: 8px;
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  li.selected {
-    background-color: #f0f8ff;
-    border-color: #007bff;
-  }
-  
+.todo-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  backdrop-filter: blur(10px); /* Glassmorphism Effect */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect to slightly increase opacity */
+.todo-container:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  outline: none;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+
+.green {
+  padding: 10px 15px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #47fa52;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.green:hover {
+  background-color: black;
+  color: #47fa52;
+}
+
+.red {
+  padding: 10px 15px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.red:hover {
+  background-color: black;
+  color: red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  transition: 0.3s ease;
+}
+
+li.selected {
+  background-color: #f0f8ff;
+  border-color: #007bff;
+}
